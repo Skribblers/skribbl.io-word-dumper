@@ -2,7 +2,7 @@
 const fs = require("fs");
 const { Client } = require("skribbler");
 
-const words = (fs.readFileSync("./words.txt", "utf8").split(/\r\n/));
+const words = (fs.readFileSync("./words.txt", "utf8").split(/\r?\n/));
 if(words[0] === "") words.shift();
 
 const host = new Client({
