@@ -1,2 +1,2 @@
 # skribbl.io-word-dumper
-Find all the words available on skribbl.io
+This script is a tool which attempts to find all possible words for Skribbl.io.

@@ -1,0 +1,14 @@
+{
+  "name": "skribbl.io-word-dumper",
+  "version": "1.0.0",
+  "description": "Find all the words available on skribbl.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MrDiamond64",
+  "license": "MIT",
+  "dependencies": {
+    "skribbler": "^1.4.0"
+  }
+}
