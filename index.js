@@ -26,17 +26,20 @@ host.on("connected", () => {
 
     console.log(`Lobby ID: ${host.lobbyId}`);
 
-    member = new Client({
-        name: "Member",
-        lobbyCode: host.lobbyId
-    });
+    const createMember = () => {
+        member = new Client({
+            name: "Member",
+            lobbyCode: host.lobbyId
+        });
 
-    member.on("connected", () => {
-        console.log("Member connected to the room, starting game.");
-        host.startGame();
+        member.on("connected", () => {
+            console.log("Member connected to the room, starting game.");
+            host.startGame();
+            main();
+        });
+    };
 
-        main();
-    });
+    setTimeout(createMember, 1000); // Wait before creating another client
 });
 
 host.on("packet", ({id,data}) => {
