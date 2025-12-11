@@ -9,6 +9,11 @@
   "author": "MrDiamond64",
   "license": "MIT",
   "dependencies": {
-    "skribbler": "^1.4.0"
+    "skribbler": "^3.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   }
 }
